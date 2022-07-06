@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registaration Form</title>
+    <link rel="stylesheet" href="/public/registration/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/public/home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/public/registration/index.html">Register</a>
+                    </li>
+                    <li class="nav-item dropdown">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <h1>Student Registaration Form</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <label for="fname">First Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="lname">Last Name:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-90">
+                <input type="email" id="email" name="email" placeholder="it should contain @,.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="mobile">Mobile:</label>
+            </div>
+            <div class="col-90">
+                <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="gender" required>Gender:</label>
+            </div>
+            <div class="col-90">
+                <input type="radio" id="male" name="gender" value="male" />Male
+                <input type="radio" id="female" name="gender" value="female" />Female
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="col-90">
+                <input type="Date" id="dob" name="dob">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="address">Address:</label>
+            </div>
+            <div class="col-90">
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="city">City:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="city" name="city" maxlength="10">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="pincode">Area PIN:</label>
+            </div>
+            <div class="col-90">
+                <input type="number" id="pin" name="pin" maxlength="6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="state">State:</label>
+            </div>
+            <div class="col-90">
+                <input type="text" id="state" name="state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <label for="qualification" required>Qualification:</label>
+            </div>
+            <div class="col-90">
+                <select name="qualification" id="qualification">
+                    <option value=" ">Select Qualification:</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="BTech.">BTech.</option>
+                    <option value="MTech.">MTech.</option>
+                    <option value="MCA">MCA</option>
+                    <option value="BCA">BCA</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+        </div>
+    </div>
+</body>
+
+</html>
